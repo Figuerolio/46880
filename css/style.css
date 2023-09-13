@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+/* 
+Paleta de colores
+    #BF212E
+    #F28D35
+    #D95829
+    #041340
+    #260101
+    #591202
+*/
+/* 
+
+*/
+
+/******************************** Inicio de Barra de navegacion **********/
+header {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li {
+    list-style: none;
+    text-decoration: none;
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; 
+}
+.navbar {
+    display: flex;
+    gap: 1.875rem;
+    margin: .9375rem;
+}
+.DioLogo img{
+    width: 6.25rem;
+    height: 2.8125rem;
+}
+/******************************** Fin de Barra de navegacion **********/
+
+
+
+/************************************PAGINA PRINCIPAL***************/
+
+body{
+    background-color: black;
+}
+.Sector1 {
+    background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+    height: 42.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.Sector1 img{
+    height: 43.75rem ;
+    width: 51.25rem;
+}
+.Sector1 h1{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+
+}
+.Sector2{
+    background-image: url(../assets/img/DIO-1985.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 43.75rem;
+    margin-top: 3.75rem;
+    width:100% ;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+}
+.Sector2 div p{
+    text-align: center;
+    background-color:#260101 ;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    color: #D95829;
+    height: auto;
+    width: 55%;
+    margin-left: 10rem;
+    border-radius: 10%;
+}
+.DioImag{
+    margin-right: 10rem;
+}
+.DioImag img{
+    height: 22rem; ;
+    width: 28.5rem ;
+
+}
+.Sector2 div img{
+    border-radius: 40%;
+}
+.DioSongs{
+    display:flex ;
+    flex-direction: row;
+    margin-top: 3.125rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.DioSongs img{
+    border-radius: 10%;
+    height: 12.5rem;
+    width: 12.5rem;
+}
+.MerchAndise{
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 5.3125rem;
+    flex-wrap: wrap;
+}
+.Poster1{
+    margin-left: 100px;
+}
+
+.MerchAndise img{
+    height: 15.625rem;
+    width: 15.625rem;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.Poster1 img{
+    height:32rem ;
+    width: 24rem;
+}
+/*************************FIN PAGINA PRINCIPAL**********************************/
+/**************************SHOP**********************************************/
+.TopShop{
+    background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+    height: 42.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.TopShop div img{
+    height:25rem ;
+    width: 25rem ;
+}
+
+
+.ShopI{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap; 
+    overflow: hidden;
+}
+.ShopI img{
+    height: 21.875rem;
+    width: 21.875rem ;
+    margin-top: 3.125rem;
+    border-radius: 15%;
+}
+
+.BunDles div h1{
+    color: #fcfcfc;
+    text-align: center;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+    margin:4.375rem 0rem 1.875rem 0rem;
+}
+.BunDles article{
+    display: flex;
+    justify-content: center;
+}
+.BunDles img {
+    border-radius: 15%;
+}
+
+.CloThing{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.CloThing img{
+    height:21.875rem ;
+    width: 21.875rem;
+    border-radius: 15%;
+    margin-top: 3.125rem;
+}
+.TitleC div h1{
+    color: #fcfcfc;
+    text-align: center;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+    margin:4.375rem 0rem 1.875rem 0rem;
+}
+.PosTers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.PosTers img{
+    height: 32.1875rem;
+    width: 23.125rem;
+    border-radius: 10%;
+}
+/************************FIN DE SHOP**************************************/
+/**********************NEWS*************************************************/
+.TopImage{
+    display: flex;
+    background-image: url(../assets/img/DIO-1985.jpg);
+    height: 42.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.TopImage h1{
+    color: #fcfcfc;
+    text-align: center;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+}
+
+.New1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 3.125rem;
+}
+.New1 article img{
+    height: 24rem ;
+    width: 32rem;
+    border-radius: 10%;
+    margin-left: 75px;
+}
+.New1 div p{
+    color: #fcfcfc;
+    text-align: left;
+    font-family: 'Jacques Francois Shadow', cursive;
+    width: 50%;
+    margin: 6.25rem;
+}
+
+.New2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.125rem;
+}
+.New2 article img{
+    height: 24rem ;
+    width: 32rem;
+    border-radius: 10%;
+    margin-left: 4.6875rem;
+}
+.New2 div p{
+    color: #fcfcfc;
+    text-align: left;
+    font-family: 'Jacques Francois Shadow', cursive;
+    width: 50%;
+
+}
+/*******************************************FIN NEWS**********************************/
+/********************************************TOURS***************************************/
+.TouerS{
+    display: flex;
+    background-image: url(../assets/img/TourTopImage.jpg);
+    height: 42.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.TouerS h1{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.PlaceS{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.PlaceS ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2.5rem 5rem .625rem 5rem;
+    height: 2.5rem;
+    text-align:start;
+    background-color: #260101;
+    border-radius: 15%;
+    overflow: hidden;
+}
+.LinkS{
+    color: #fcfcfc;
+    text-decoration: none;
+    background-color: #591202;
+}
+/************************************FIN TOURS**************************/
+/*************************************ABOUT US**********************************/
+.AbD{
+    background-image: url(../assets/img/Dio-1983.jpg);
+    height: 42.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.AbD h1{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+}
+.BioGrafi{
+    display: flex;
+    flex-direction: column;
+    margin:2.5rem;
+}
+.BioGrafi div h1{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.BioGrafi div p{
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+/********************************************************Fin del Main***************/
+/***************************************************Principio del Footer*******************/
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+
+
+}
+footer img{
+    height: 4.6875rem ;
+    width: 4.6875rem;
+}
+
+
+/******************************************************Fin del Footer*********************/
