@@ -28,12 +28,15 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.navbar li {
-    list-style: none;
-    text-decoration: none;
+.navbar a{
     color: #fcfcfc;
-    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: none;
 }
+.navbar li{
+    list-style: none;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
 .navbar {
     display: flex;
     gap: 1.875rem;
@@ -55,9 +58,9 @@ body{
 .Sector1 {
     background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
     height: 42.5rem;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -90,12 +93,17 @@ body{
     background-color:#260101 ;
     font-family: 'Jacques Francois Shadow', cursive; 
     color: #D95829;
-    height: auto;
     width: 55%;
     margin-left: 10rem;
     border-radius: 10%;
 }
-
+.Sector2 div{
+    display: flex;
+    background-color: #591202;
+    overflow: hidden;
+    margin: 300px;
+    height: 100%;
+}
 .Sector2 div img{
     border-radius: 40%;
 }
