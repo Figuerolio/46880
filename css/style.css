@@ -58,7 +58,6 @@ body{
 .Sector1 {
     background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
     height: 42.5rem;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
@@ -67,9 +66,13 @@ body{
     display: flex;
     flex-direction: column;
 }
+.LogoPrincipal{
+    width: 80%;
+    height: 80%;
+}
 .Sector1 img{
-    height: 43.75rem ;
-    width: 51.25rem;
+    height: 100% ;
+    width: 100%;
 }
 .Sector1 h1{
     color: #fcfcfc;
@@ -87,6 +90,7 @@ body{
     background-size:cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .Sector2 div p{
     text-align:center;
@@ -102,15 +106,15 @@ body{
     align-items: center;
     background-color: #591202;
     justify-content: center;
-    margin: 7.5rem;
+    width: 80%;
     height: 75%;
     border-radius: 20%;
 }
 .Sector2 div img{
     margin-right: 2rem;
     border-radius: 40%;
-    height: 20.625rem;
-    width: 28.125rem;
+    height: 350px;
+    width: 420px;
 }
 .DioSongs{
     display:flex ;
@@ -121,35 +125,56 @@ body{
 }
 .DioSongs img{
     border-radius: 10%;
-    height: 12.5rem;
-    width: 12.5rem;
+    height: 10.5rem;
+    width: 10.5rem;
 }
 .MerchAndise{
-    display: flex;
-    width: 100%;
-    margin-top: 5.3125rem;
-    flex-wrap: nowrap;
-    
-}
-.MerchAndise article{
-    width: 50%;
-}
-.DioStuff{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 9.375rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    margin-top: 5%;
+    row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "sectionGrid1 sectionGrid2 sectionGrid5"
+    "sectionGrid3 sectionGrid4 sectionGrid5"
+    ;
 }
 
+.sectionGrid1{
+    grid-area: sectionGrid1;
+}
+.sectionGrid2{
+    grid-area: sectionGrid2;
+}
+.sectionGrid3{
+    grid-area: sectionGrid3;
+}
+.sectionGrid4{
+    grid-area: sectionGrid4;
+}
+.sectionGrid5{
+    grid-area: sectionGrid5;
+
+}
+.MerchAndise article {
+
+}
 
 .MerchAndise img{
-    height: 15.625rem;
-    width: 15.625rem;
+    height: 100%;
+    width: 100%;
     border-radius: 10%;
     overflow: hidden;
 }
+
 .Poster1 img{
-    height:32rem ;
-    width: 24rem;
+    height:500px;
+    width:350px;
 }
 /*************************FIN PAGINA PRINCIPAL**********************************/
 /**************************SHOP**********************************************/
@@ -384,3 +409,21 @@ footer img{
 
 
 /******************************************************Fin del Footer*********************/
+
+/**************************************************Mediaqueris*******************************/
+@media (max-width:900px){
+    .MerchAndise{
+        grid-template-columns: repeat(2,1fr) ;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "sectionGrid1 sectionGrid2"
+        "sectionGrid3 sectionGrid4"
+        "sectionGrid5 sectionGrid5"
+        ;
+        align-items: center;
+        justify-items: center;
+    }
+    .MerchAndise section{
+        height: 250px;
+    }
+}
