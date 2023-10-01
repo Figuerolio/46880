@@ -500,8 +500,8 @@ footer img{
         width:6.875rem ;
     }
     .MerchAndise img{
-        height: 145px ;
-        width: 145px;
+        height: 9.0625rem ;
+        width: 9.0625rem;
     }
     .Poster1 img{
         height: 25rem;
@@ -518,8 +518,8 @@ footer img{
         width:16.875rem ;
     }
     .DioLogo img{
-        height: 35px;
-        width: 80px;
+        height: 2.1875rem;
+        width: 5rem;
     }
 }
 @media (max-width:400px){
