@@ -24,8 +24,9 @@ Paleta de colores
 header {
     background-color: black;
     position: sticky;
-    top: 0px;
     display: flex;
+    align-items: center;
+    height: 60px;
     justify-content: space-between;
 }
 .navbar a{
@@ -40,8 +41,9 @@ header {
 .navbar {
     display: flex;
     gap: 1.875rem;
-    margin: .9375rem;
+    margin: 5px;
 }
+
 .DioLogo img{
     width: 6.25rem;
     height: 2.8125rem;
@@ -52,6 +54,9 @@ header {
 
 /************************************PAGINA PRINCIPAL***************/
 
+main{
+    background-color: black;
+}
 body{
     background-color: black;
 }
@@ -281,50 +286,22 @@ body{
     font-family: 'Jacques Francois Shadow', cursive; 
     text-decoration: underline;
 }
-
-.New1{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+.NewsTop{
+    margin-top: 70px;
+}
+.row {
     align-items: center;
-    flex-direction: row-reverse;
-    margin-top: 3.125rem;
 }
-.New1 article img{
-    height: 24rem ;
-    width: 32rem;
-    border-radius: 10%;
-    margin-left: 75px;
-}
-.New1 div p{
+.col{
     color: #fcfcfc;
-    text-align: left;
-    font-family: 'Jacques Francois Shadow', cursive;
-    width: 50%;
-    margin: 6.25rem;
+    font-family: 'Jacques Francois Shadow', cursive; 
+}
+.col img{
+    height: 100%;
+    width: 100%;
 }
 
-.New2{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 3.125rem;
-}
-.New2 article img{
-    height: 24rem ;
-    width: 32rem;
-    border-radius: 10%;
-    margin-left: 4.6875rem;
-}
-.New2 div p{
-    color: #fcfcfc;
-    text-align: left;
-    font-family: 'Jacques Francois Shadow', cursive;
-    width: 50%;
 
-}
 /*******************************************FIN NEWS**********************************/
 /********************************************TOURS***************************************/
 .TouerS{
@@ -343,26 +320,22 @@ body{
     color: #fcfcfc;
     font-family: 'Jacques Francois Shadow', cursive;
 }
-.PlaceS{
+.col-8{
     color: #fcfcfc;
     font-family: 'Jacques Francois Shadow', cursive;
 }
-.PlaceS ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2.5rem 5rem .625rem 5rem;
-    height: 2.5rem;
-    text-align:start;
-    background-color: #260101;
-    border-radius: 15%;
-    overflow: hidden;
-}
-.LinkS{
-    color: #fcfcfc;
+.col-2 a{
+    font-family: 'Jacques Francois Shadow', cursive;
     text-decoration: none;
+    color: #fcfcfc;
+}
+.toursV{
+    margin:30px 0px 0px 0px;
+}
+.bg-rode{
     background-color: #591202;
 }
+
 /************************************FIN TOURS**************************/
 /*************************************ABOUT US**********************************/
 .AbD{
@@ -421,7 +394,7 @@ footer img{
 @media (max-width:900px){
     .MerchAndise{
         grid-template-columns: repeat(2,1fr) ;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
         grid-template-areas: 
         "sectionGrid1 sectionGrid2"
         "sectionGrid3 sectionGrid4"
@@ -434,11 +407,17 @@ footer img{
         margin-top: 30px;
     }
     .MerchAndise section{
-        height: 150px;
+        height: 15.625rem;
+    }
+    .MerchAndise img{
+        height: 15.625rem;
     }
     .LogoPrincipal{
-        width: 600px;
-        height: 500px ;
+        width: 37.5rem;
+        height: 31.25rem ;
+    }
+    .Poster1 img{
+        height: 28.125rem;
     }
 }
 @media (max-width:840px){
