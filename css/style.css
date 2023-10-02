@@ -287,9 +287,10 @@ body{
     text-decoration: underline;
 }
 .NewsTop{
-    margin-top: 70px;
+    margin-top: 4.375rem;
 }
 .row {
+    margin-top: 2.5rem;
     align-items: center;
 }
 .col{
@@ -299,6 +300,7 @@ body{
 .col img{
     height: 100%;
     width: 100%;
+    border-radius: 10%;
 }
 
 
@@ -330,7 +332,7 @@ body{
     color: #fcfcfc;
 }
 .toursV{
-    margin:30px 0px 0px 0px;
+    margin:1.875rem 0rem 0rem 0rem;
 }
 .bg-rode{
     background-color: #591202;
@@ -404,7 +406,7 @@ footer img{
         ;
         align-items: center;
         justify-items: center;
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
     .MerchAndise section{
         height: 15.625rem;
@@ -430,8 +432,8 @@ footer img{
         display: none;
     }
     .LogoPrincipal{
-        width: 500px;
-        height: 400px ;
+        width: 31.25rem;
+        height: 25rem ;
     }
     .Sector2 article{
         flex-direction: column-reverse;
@@ -451,11 +453,11 @@ footer img{
 @media (max-width:555px){
     .navbar{
         font-size: 70%;
-        gap: 10px;
+        gap: .625rem;
     }
     .LogoPrincipal{
-        width: 400px;
-        height: 300px ;
+        width: 25rem;
+        height: 18.75rem ;
     }
     .DioSongs img{
         height:8.125rem ;
@@ -470,8 +472,13 @@ footer img{
         width:18.75rem ;
     }
     .MerchAndise{
-        row-gap: 0px;
+        row-gap: 0rem;
     }
+    .col img{
+        height: 10.625rem;
+        width: 15.625rem;
+    }
+
 }
 @media (max-width:490px){
     .DioSongs img{
@@ -503,8 +510,8 @@ footer img{
 }
 @media (max-width:400px){
     .LogoPrincipal{
-        width: 300px;
-        height: 250px ;
+        width: 18.75rem;
+        height: 15.625rem ;
     }
 }
 @media (max-width:334px){
