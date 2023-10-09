@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    position:fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.75rem;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.875rem;
+    margin: .3125rem;
+    li{
+        list-style: none;
+        font-family: 'Jacques Francois Shadow', cursive;;
+        a{
+            color: #fcfcfc;
+            text-decoration: none;
+            &:hover{
+                color:#BF212E ;
+            }
+        }
+    }
+}
+.DioLogo{
+    img{
+        width: 6.25rem;
+        height: 2.8125rem;
+    }
+}
+/***************Fin Barra de Navegacion*************/
+
+
+
+/****************Pag Principal**********************/
+body{
+    background-color: black;
+    main{
+        background-color: black;
+    }
+}
+
+.Sector1{
+    display: flex;
+    flex-direction: column;
+    background-image:url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height:42.5rem ;
+
+}
+
+.LogoPrincipal{
+    width: 50rem;
+    height: 37.5;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.Sector2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../assets/img/DIO-1985.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 3.75rem;
+    height: 43.75rem;
+    width:100%;
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        background-color:#591202 ;
+        border-radius: 40%;
+        margin: 0rem 5% 0rem 5%;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 75%;
+            border-radius: 20%;
+            img{
+                width: 26.25rem;
+                height: 19.6875rem;
+                border-radius: 45%;
+                margin: .4688rem;
+            }
+            p{
+                background-color:#260101  ;
+                width: 80%;
+                margin: .4688rem;
+                border-radius: 10%;
+                text-align: center;
+                font-family: 'Jacques Francois Shadow', cursive;
+                color: #fcfcfc;
+            }
+        }
+    }
+}
+
+.DioSongs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3.125rem;
+    img{
+        height: 10.5rem;
+        width: 10.5rem;
+        border-radius: 10%;
+    }
+}
+
+.MerchAndise{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items:center; 
+    justify-content: center;
+    overflow: hidden;
+    row-gap: 1.25rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-template-areas: 
+    "sectionGrid1 sectionGrid2 sectionGrid5"
+    "sectionGrid3 sectionGrid4 sectionGrid5"
+    ;
+    img{
+        height:15.625rem ;
+        width: 15.625rem;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+}
+.Poster1{
+    img{
+        height:31.25rem ;
+        width: 21.875rem;
+    }
+}
+.sectionGrid1{
+    grid-area: sectionGrid1;
+}
+.sectionGrid2{
+    grid-area: sectionGrid2;
+}
+.sectionGrid3{
+    grid-area: sectionGrid3;
+}
+.sectionGrid4{
+    grid-area: sectionGrid4;
+}
+.sectionGrid5{
+    grid-area: sectionGrid5;
+}
+
+/*****************************FIN PAG PRINCIPAL*********************/
+
+
+/******************************SHOP***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    img{
+        height:4.6875rem ;
+        width:4.6875rem ;
+    }
+}
