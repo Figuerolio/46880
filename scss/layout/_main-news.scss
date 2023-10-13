@@ -1,0 +1,31 @@
+.TopImage{
+    @include flex(row,nowrap,center,center,none);
+    background-image: url(../assets/img/DIO-1985.jpg);
+    @include bg-confg(center,cover,no-repeat);
+    @include x-y-c(100%,42.5rem,none);
+    h1{
+        color: $col-tex;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Jacques Francois Shadow', cursive; 
+    }
+}
+
+.NewsTop{
+    margin-top: 4.375rem;
+}
+.row{
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+.col{
+    color:$col-tex;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    a{
+        img{
+            @include x-y-c(100%,100%,10%);
+        }
+    }
+
+}

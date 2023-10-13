@@ -1,0 +1,21 @@
+@media (max-width:675px){
+    .lastLine{
+        display: none;
+    }
+    .LogoPrincipal{
+        width: 31.25rem;
+        height: 25rem ;
+    }
+    .Sector2 article{
+        flex-direction: column-reverse;
+        background-color: transparent;
+    }
+    .divParrafo{
+        background-color:$col-terci;
+        width: 100%;
+    }
+    .Sector2 div img{
+        height:16.5625rem ;
+        width:23.125rem ;
+    }
+}

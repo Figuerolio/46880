@@ -3,17 +3,25 @@
   padding: 0;
   box-sizing: border-box; }
 
+/********************Barra Nav**********************/
 header {
   background-color: black;
   position: fixed;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: none;
+  width: 100%;
   height: 3.75rem; }
 
 .navbar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: none;
   gap: 1.875rem;
   margin: .3125rem; }
   .navbar li {
@@ -21,7 +29,8 @@ header {
     font-family: 'Jacques Francois Shadow', cursive; }
     .navbar li a {
       color: #fcfcfc;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: text-decoration 2.7s, color 2s; }
       .navbar li a:hover {
         color: #BF212E; }
 
@@ -36,47 +45,56 @@ body {
   body main {
     background-color: black; }
 
-.Sector1 {
+.Sector1, .Sector2 {
   display: flex;
   flex-direction: column;
-  background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 42.5rem; }
+  gap: none;
+  background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 42.5rem;
+  border-radius: none; }
 
 .LogoPrincipal {
   width: 50rem;
-  height: 37.5; }
+  height: 37.5rem;
+  border-radius: none; }
   .LogoPrincipal img {
+    width: 100%;
     height: 100%;
-    width: 100%; }
+    border-radius: none; }
 
 .Sector2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../assets/img/DIO-1985.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 3.75rem;
+  width: 100%;
   height: 43.75rem;
-  width: 100%; }
+  border-radius: none;
+  flex-direction: row;
+  background-image: url(../assets/img/DIO-1985.jpg);
+  margin-top: 3.75rem; }
   .Sector2 article {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    gap: none;
+    width: none;
     height: 60%;
-    background-color: #591202;
     border-radius: 40%;
+    background-color: #591202;
     margin: 0rem 5% 0rem 5%; }
     .Sector2 article div {
       display: flex;
-      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
       justify-content: center;
+      align-items: center;
+      gap: none;
       width: 100%;
       height: 75%;
       border-radius: 20%; }
@@ -88,8 +106,9 @@ body {
       .Sector2 article div p {
         background-color: #260101;
         width: 80%;
-        margin: .4688rem;
+        height: none;
         border-radius: 10%;
+        margin: .4688rem;
         text-align: center;
         font-family: 'Jacques Francois Shadow', cursive;
         color: #fcfcfc; }
@@ -99,33 +118,38 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: none;
+  gap: none;
   margin-top: 3.125rem; }
   .DioSongs img {
-    height: 10.5rem;
     width: 10.5rem;
+    height: 10.5rem;
     border-radius: 10%; }
 
 .MerchAndise {
   display: grid;
-  width: 90%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  width: 90%;
+  height: none;
+  border-radius: none;
   overflow: hidden;
-  row-gap: 1.25rem;
   margin-top: 5%;
   margin-left: 5%;
   grid-template-areas: "sectionGrid1 sectionGrid2 sectionGrid5" "sectionGrid3 sectionGrid4 sectionGrid5"; }
   .MerchAndise img {
-    height: 15.625rem;
     width: 15.625rem;
+    height: 15.625rem;
     border-radius: 10%;
     overflow: hidden; }
 
 .Poster1 img {
+  width: 21.875rem;
   height: 31.25rem;
-  width: 21.875rem; }
+  border-radius: 10%; }
 
 .sectionGrid1 {
   grid-area: sectionGrid1; }
@@ -143,12 +167,229 @@ body {
   grid-area: sectionGrid5; }
 
 /*****************************FIN PAG PRINCIPAL*********************/
-/******************************SHOP***************************************/
-footer {
+/***********************************NEWS************************/
+.TopImage {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: none;
+  background-image: url(../assets/img/DIO-1985.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 42.5rem;
+  border-radius: none; }
+  .TopImage h1 {
+    color: #fcfcfc;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Jacques Francois Shadow', cursive; }
+
+.NewsTop {
+  margin-top: 4.375rem; }
+
+.row {
+  margin-top: 2.5rem;
+  align-items: center; }
+
+.col {
+  color: #fcfcfc;
+  font-family: 'Jacques Francois Shadow', cursive; }
+  .col a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%; }
+
+/******************************SHOP***************************************/
+.TopShop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 42.5rem; }
+  .TopShop div img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: none; }
+
+.TitleC div p {
+  font-size: 40px;
+  font-family: 'Jacques Francois Shadow', cursive;
+  color: #fcfcfc;
+  text-decoration: underline;
+  text-align: center;
+  margin: 4.375rem 0rem 1.875rem 0rem; }
+
+.ShopI {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: none;
+  gap: none;
+  overflow: hidden; }
+  .ShopI article div a img {
+    width: 21.875rem;
+    height: 21.875rem;
+    border-radius: 15%;
+    margin-top: 3.125rem; }
+
+.BunDles div p {
+  font-size: 40px;
+  color: #fcfcfc;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Jacques Francois Shadow', cursive;
+  margin: 4.375rem 0rem 1.875rem 0rem; }
+
+.BunDles article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: none; }
+  .BunDles article a img {
+    border-radius: 15%; }
+
+.CloThing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: none;
+  gap: none; }
+  .CloThing article div a img {
+    width: 21.875rem;
+    height: 21.875rem;
+    border-radius: 15%;
+    margin-top: 3.125rem; }
+
+.PosTers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: none;
+  gap: none; }
+  .PosTers article div a img {
+    width: 23.125rem;
+    height: 32.1875rem;
+    border-radius: 10%; }
+
+/*****************************Footer***************************/
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: black; }
   footer img {
     height: 4.6875rem;
     width: 4.6875rem; }
+
+/*****************************MediaQueris**********************/
+@media (max-width: 900px) {
+  .MerchAndise {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "sectionGrid1 sectionGrid2" "sectionGrid3 sectionGrid4" "sectionGrid5 sectionGrid5" "sectionGrid sectionGrid" "sectionGrid sectionGrid";
+    align-items: center;
+    justify-items: center;
+    margin-top: 1.875rem; }
+  .MerchAndise section {
+    height: 15.625rem; }
+  .MerchAndise img {
+    height: 15.625rem; }
+  .LogoPrincipal {
+    width: 37.5rem;
+    height: 31.25rem; }
+  .Poster1 img {
+    height: 28.125rem; } }
+
+@media (max-width: 840px) {
+  .dreamEvil {
+    display: none; } }
+
+@media (max-width: 675px) {
+  .lastLine {
+    display: none; }
+  .LogoPrincipal {
+    width: 31.25rem;
+    height: 25rem; }
+  .Sector2 article {
+    flex-direction: column-reverse;
+    background-color: transparent; }
+  .divParrafo {
+    background-color: #591202;
+    width: 100%; }
+  .Sector2 div img {
+    height: 16.5625rem;
+    width: 23.125rem; } }
+
+@media (max-width: 555px) {
+  .navbar {
+    font-size: 70%;
+    gap: .625rem; }
+  .LogoPrincipal {
+    width: 25rem;
+    height: 18.75rem; }
+  .DioSongs img {
+    height: 8.125rem;
+    width: 8.125rem; }
+  .MerchAndise img {
+    height: 10.9375rem;
+    width: 10.9375rem; }
+  .Poster1 img {
+    height: 25rem;
+    width: 18.75rem; }
+  .MerchAndise {
+    row-gap: 0rem; }
+  .col img {
+    height: 10.625rem;
+    width: 15.625rem; } }
+
+@media (max-width: 490px) {
+  .DioSongs img {
+    height: 6.875rem;
+    width: 6.875rem; }
+  .MerchAndise img {
+    height: 9.0625rem;
+    width: 9.0625rem; }
+  .Poster1 img {
+    height: 25rem;
+    width: 18.75rem; } }
+
+@media (max-width: 425px) {
+  .navbar {
+    font-size: 60%;
+    gap: 6px; }
+  .Sector2 div img {
+    height: 12.5rem;
+    width: 16.875rem; }
+  .DioLogo img {
+    height: 2.1875rem;
+    width: 5rem; } }
+
+@media (max-width: 400px) {
+  .LogoPrincipal {
+    width: 18.75rem;
+    height: 15.625rem; } }
+
+@media (max-width: 334px) {
+  .lockWolfes {
+    display: none; }
+  .navbar {
+    font-size: 55%; } }

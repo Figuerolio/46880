@@ -1,0 +1,30 @@
+header{
+    background-color: $bg-principal;
+    position:fixed;
+    @include flex(row,nowrap,space-between,center,none);
+    width: 100%;
+    height: 3.75rem;
+}
+
+.navbar{
+    @include flex(row,nowrap,none,none,1.875rem);
+    margin: .3125rem;
+    li{
+        list-style: none;
+        font-family: 'Jacques Francois Shadow', cursive;;
+        a{
+            color: $col-tex;
+            text-decoration: none;
+            transition: text-decoration 2.7s, color 2s;
+            &:hover{
+                color:$col-sec ;
+            }
+        }
+    }
+}
+.DioLogo{
+    img{
+        width: 6.25rem;
+        height: 2.8125rem;
+    }
+}

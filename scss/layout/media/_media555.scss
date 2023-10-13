@@ -1,0 +1,30 @@
+@media (max-width:555px){
+    .navbar{
+        font-size: 70%;
+        gap: .625rem;
+    }
+    .LogoPrincipal{
+        width: 25rem;
+        height: 18.75rem ;
+    }
+    .DioSongs img{
+        height:8.125rem ;
+        width:8.125rem ;
+    }
+    .MerchAndise img{
+        height:10.9375rem ;
+        width:10.9375rem;
+    }
+    .Poster1 img{
+        height: 25rem;
+        width:18.75rem ;
+    }
+    .MerchAndise{
+        row-gap: 0rem;
+    }
+    .col img{
+        height: 10.625rem;
+        width: 15.625rem;
+    }
+
+}

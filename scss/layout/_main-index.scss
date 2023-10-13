@@ -1,0 +1,94 @@
+body{
+    background-color: $bg-principal;
+    main{
+        background-color: $bg-principal;
+    }
+}
+
+.Sector1{
+    @include flex(column,nowrap,center,center,none);
+    background-image:url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236) ;
+    @include bg-confg(center,cover,no-repeat);
+    @include x-y-c(100%,42.5rem,none);
+}
+
+.LogoPrincipal{
+    @include x-y-c(50rem,37.5rem,none);
+    img{
+        @include x-y-c(100%,100%,none);
+    }
+}
+
+.Sector2{
+    @extend .Sector1;
+    @include x-y-c(100%,43.75rem,none);
+    flex-direction: row;
+    background-image:url(../assets/img/DIO-1985.jpg) ;
+    margin-top: 3.75rem;
+    article{
+        @include flex(row,nowrap,center,center,none);
+        @include x-y-c(none,60%,40%);
+        background-color:$col-terci ;
+        margin: 0rem 5% 0rem 5%;
+        div{
+            @include flex(row,nowrap,center,center,none);
+            @include x-y-c(100%,75%,20%);
+            img{
+                @include x-y-c(26.25rem,19.6875rem,45%);
+                margin: .4688rem;
+            }
+            p{
+                background-color:$col-extra;
+                @include x-y-c(80%,none,10%);
+                margin: .4688rem;
+                text-align: center;
+                font-family: 'Jacques Francois Shadow', cursive;
+                color:$col-tex;
+            }
+        }
+    }
+}
+
+.DioSongs{
+    @include flex(row,wrap,space-evenly,none,none);
+    margin-top: 3.125rem;
+    img{
+        @include x-y-c(10.5rem,10.5rem,10%);
+    }
+}
+
+.MerchAndise{
+    @include grid(repeat(3,1fr),repeat(2,1fr),center,center,1.25rem);
+    @include x-y-c(90%,none,none);
+    overflow: hidden;
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-template-areas: 
+    "sectionGrid1 sectionGrid2 sectionGrid5"
+    "sectionGrid3 sectionGrid4 sectionGrid5"
+    ;
+    img{
+        @include x-y-c(15.625rem,15.625rem,10%);
+        overflow: hidden;
+    }
+}
+.Poster1{
+    img{
+        @include x-y-c(21.875rem,31.25rem,10%);
+    }
+}
+.sectionGrid1{
+    grid-area: sectionGrid1;
+}
+.sectionGrid2{
+    grid-area: sectionGrid2;
+}
+.sectionGrid3{
+    grid-area: sectionGrid3;
+}
+.sectionGrid4{
+    grid-area: sectionGrid4;
+}
+.sectionGrid5{
+    grid-area: sectionGrid5;
+}

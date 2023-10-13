@@ -1,0 +1,29 @@
+@mixin flex($direction, $wrap,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap:$wrap;
+    justify-content:$justify ;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($col,$row,$content,$align,$gap){
+    display: grid;
+    grid-template-columns:$col ;
+    grid-template-rows:$row;
+    justify-content:$content ;
+    align-items:$align ;
+    gap:$gap ;
+}
+
+@mixin x-y-c($wid,$hei,$bor){
+    width:$wid ;
+    height:$hei ;
+    border-radius:$bor ;
+}
+
+@mixin bg-confg($bg-posit,$bg-size,$bg-repeat){
+    background-position:$bg-posit ;
+    background-size:$bg-size ;
+    background-repeat: $bg-repeat;
+}

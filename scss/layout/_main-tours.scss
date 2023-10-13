@@ -1,0 +1,9 @@
+.TouerS{
+    @include flex(row,none,center,center,none);
+    @include bg-confg(center,cover,no-repeat);
+    div{
+        h1{
+
+        }
+    }
+}

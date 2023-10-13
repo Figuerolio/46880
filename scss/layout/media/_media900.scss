@@ -1,0 +1,29 @@
+@media (max-width:900px){
+    .MerchAndise{
+        grid-template-columns: repeat(2,1fr) ;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "sectionGrid1 sectionGrid2"
+        "sectionGrid3 sectionGrid4"
+        "sectionGrid5 sectionGrid5"
+        "sectionGrid sectionGrid"
+        "sectionGrid sectionGrid"
+        ;
+        align-items: center;
+        justify-items: center;
+        margin-top: 1.875rem;
+    }
+    .MerchAndise section{
+        height: 15.625rem;
+    }
+    .MerchAndise img{
+        height: 15.625rem;
+    }
+    .LogoPrincipal{
+        width: 37.5rem;
+        height: 31.25rem ;
+    }
+    .Poster1 img{
+        height: 28.125rem;
+    }
+}

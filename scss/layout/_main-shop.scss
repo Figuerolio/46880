@@ -1,0 +1,87 @@
+.TopShop{
+    @include flex(column,nowrap,center,center,none);
+    background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100% ;
+    height: 42.5rem;
+    div{
+        img{
+            @include x-y-c(25rem,25rem,none);
+        }
+    }
+}
+.TitleC{
+    div{
+        p{
+        font-size: map-get($font-size,xxl );
+        font-family:'Jacques Francois Shadow', cursive; ;
+        color: $col-tex;
+        text-decoration: underline;
+        text-align: center;
+        margin:4.375rem 0rem 1.875rem 0rem;
+        }
+    }
+}
+
+.ShopI{
+    @include flex(row,wrap,space-evenly,none,none);
+    overflow:hidden;
+    article{
+        div{
+            a{
+                img{
+                    @include x-y-c(21.875rem,21.875rem,15%);
+                    margin-top: 3.125rem;
+                }
+            }
+        }
+    }
+}
+.BunDles{
+    div{
+        p{
+            font-size: map-get($font-size,xxl );
+            color: $col-tex;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Jacques Francois Shadow', cursive; 
+            margin: 4.375rem 0rem 1.875rem 0rem;
+        }
+    }
+    article{
+        @include flex(row,nowrap,center,none,none);
+            a{
+                img{
+                    border-radius: 15%;
+                }
+            }
+    }
+}
+
+.CloThing{
+    @include flex(row,wrap,space-around,none,none);
+    article{
+        div{
+            a{
+                img{
+                @include x-y-c(21.875rem,21.875rem,15%);
+                margin-top:3.125rem ;
+                }
+            }
+        }
+    }
+}
+.PosTers{
+    @include flex(row,wrap,space-around,none,none);
+    article{
+        div{
+            a{
+                img{
+                    @include x-y-c(23.125rem,32.1875rem,10%);
+                }
+            }
+        }
+    }
+}
