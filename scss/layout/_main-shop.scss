@@ -1,11 +1,8 @@
 .TopShop{
     @include flex(column,nowrap,center,center,none);
     background-image:url(../assets/img/500x500-dio-cover.jpg) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width:100% ;
-    height: 42.5rem;
+    @include bg-confg(center,cover,no-repeat);
+    @include x-y-c(100%,52.5rem,none);
     div{
         img{
             @include x-y-c(25rem,25rem,none);
@@ -40,16 +37,7 @@
     }
 }
 .BunDles{
-    div{
-        p{
-            font-size: map-get($font-size,xxl );
-            color: $col-tex;
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Jacques Francois Shadow', cursive; 
-            margin: 4.375rem 0rem 1.875rem 0rem;
-        }
-    }
+    @extend .TitleC;
     article{
         @include flex(row,nowrap,center,none,none);
             a{
