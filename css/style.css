@@ -52,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: none;
-  background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+  background-image: url(../assets/img/500x500-dio-cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -211,7 +211,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: none;
-  background-image: url(https://flyingout.co.nz/cdn/shop/products/fdd739a9-cc06-402b-9e99-0c5c8cc85d55.jpg?v=1612088236);
+  background-image: url(../assets/img/500x500-dio-cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,6 +287,81 @@ body {
     height: 32.1875rem;
     border-radius: 10%; }
 
+/******************************TOURS**********************************/
+.TouerS {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/TourTopImage.jpg);
+  width: 100%;
+  height: 42.5rem;
+  border-radius: none; }
+  .TouerS div h1 {
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; }
+
+.col-8 {
+  color: #fcfcfc;
+  font-family: 'Jacques Francois Shadow', cursive; }
+
+.col-2 {
+  font-family: 'Jacques Francois Shadow', cursive;
+  text-decoration: none;
+  color: #fcfcfc; }
+
+.toursV {
+  margin: 1.875rem 0rem 5rem 0rem; }
+
+.bg-rode {
+  background-color: #591202; }
+
+/******************************ABOUT*************************************/
+.AbD {
+  background-image: url(../assets/img/Dio-1983V2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 42.5rem;
+  border-radius: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+  .AbD div h1 {
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive;
+    text-decoration: underline; }
+
+.BioGrafi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  margin: 2.5rem; }
+  .BioGrafi div p {
+    font-size: 20px;
+    color: #fcfcfc;
+    font-family: 'Jacques Francois Shadow', cursive; }
+
+.titleB {
+  color: #fcfcfc;
+  font-family: 'Jacques Francois Shadow', cursive;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 30px; }
+
 /*****************************Footer***************************/
 footer {
   display: flex;
@@ -337,7 +412,11 @@ footer {
     width: 100%; }
   .Sector2 div img {
     height: 16.5625rem;
-    width: 23.125rem; } }
+    width: 23.125rem; }
+  .BunDles article a img {
+    width: 21.875rem;
+    height: 21.875rem;
+    border-radius: none; } }
 
 @media (max-width: 555px) {
   .navbar {
@@ -366,8 +445,8 @@ footer {
     height: 6.875rem;
     width: 6.875rem; }
   .MerchAndise img {
-    height: 9.0625rem;
-    width: 9.0625rem; }
+    height: 8.5rem;
+    width: 8.5rem; }
   .Poster1 img {
     height: 25rem;
     width: 18.75rem; } }
@@ -376,12 +455,32 @@ footer {
   .navbar {
     font-size: 60%;
     gap: 6px; }
-  .Sector2 div img {
+  .Sector2 article div img {
     height: 12.5rem;
     width: 16.875rem; }
   .DioLogo img {
     height: 2.1875rem;
-    width: 5rem; } }
+    width: 5rem; }
+  .TopShop div img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: none; }
+  .ShopI article div a img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: none; }
+  .CloThing article div a img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: none; }
+  .PosTers article div a img {
+    width: 20.125rem;
+    height: 29.1875rem;
+    border-radius: none; }
+  .BunDles article a img {
+    width: 19.875rem;
+    height: 19.875rem;
+    border-radius: none; } }
 
 @media (max-width: 400px) {
   .LogoPrincipal {

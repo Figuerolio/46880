@@ -1,9 +1,27 @@
 .TouerS{
     @include flex(row,none,center,center,none);
     @include bg-confg(center,cover,no-repeat);
+    background-image: url(../assets/img/TourTopImage.jpg);
+    @include x-y-c(100%,42.5rem,none);
     div{
         h1{
-
+            color: $col-tex;
+            font-family:'Jacques Francois Shadow', cursive;
         }
     }
+}
+.col-8{
+    color: $col-tex;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.col-2{
+    font-family: 'Jacques Francois Shadow', cursive;
+    text-decoration: none;
+    color: $col-tex;
+}
+.toursV{
+    margin:1.875rem 0rem 5rem 0rem;
+}
+.bg-rode{
+    background-color:$col-terci ;
 }

@@ -1,0 +1,32 @@
+.AbD{
+    background-image: url(../assets/img/Dio-1983V2.jpg);
+    @include bg-confg(center,cover,no-repeat);
+    @include x-y-c(100%,42.5rem,none);
+    @include flex(column,nowrap,center,center,none);
+    div{
+        h1{
+            color: $col-tex;
+            font-family: 'Jacques Francois Shadow', cursive; 
+            text-decoration: underline;
+        }
+    }
+}
+.BioGrafi{
+    @include flex(column,nowrap,none,none,none);
+    margin: 2.5rem;
+    div{
+        p{
+            font-size: map-get($font-size ,md );
+            color: $col-tex;
+            font-family: 'Jacques Francois Shadow', cursive;
+        }
+    }
+}
+.titleB{
+    color: $col-tex;
+    font-family: 'Jacques Francois Shadow', cursive; 
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: map-get($font-size, xl );
+}    

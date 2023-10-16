@@ -6,16 +6,32 @@
         width: 31.25rem;
         height: 25rem ;
     }
-    .Sector2 article{
+    .Sector2{
+        article{
         flex-direction: column-reverse;
         background-color: transparent;
-    }
+        }
+    } 
     .divParrafo{
         background-color:$col-terci;
         width: 100%;
     }
-    .Sector2 div img{
-        height:16.5625rem ;
-        width:23.125rem ;
+    .Sector2{
+        div{
+            img{
+                height:16.5625rem ;
+                width:23.125rem ;
+            }
+        } 
+    } 
+    .BunDles{
+        article{
+            a{
+                img{
+                    @include x-y-c(21.875rem,21.875rem,none);
+                }
+            }
+        }
     }
+
 }

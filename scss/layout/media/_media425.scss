@@ -3,12 +3,66 @@
         font-size: 60%;
         gap: 6px;
     }
-    .Sector2 div img{
-        height:12.5rem;
-        width:16.875rem ;
+    .Sector2 
+        article{
+            div{
+                img{
+                    height:12.5rem;
+                    width:16.875rem ;
+            } 
+        }
     }
     .DioLogo img{
         height: 2.1875rem;
         width: 5rem;
+    }
+    .TopShop{
+        div{
+            img{
+                @include x-y-c(20rem,20rem,none);
+            }
+        }
+    }
+    .ShopI{
+        article{
+            div{
+                a{
+                    img{
+                        @include x-y-c(18rem,18rem,none);
+                    }
+                }
+            }
+        }
+    }
+    .CloThing{
+        article{
+            div{
+                a{
+                    img{
+                        @include x-y-c(18rem,18rem,none);
+                    }
+                }
+            }
+        }
+    }
+    .PosTers{
+        article{
+            div{
+                a{
+                    img{
+                        @include x-y-c(20.125rem,29.1875rem,none);
+                    }
+                }
+            }
+        }
+    }
+    .BunDles{
+        article{
+            a{
+                img{
+                    @include x-y-c(19.875rem,19.875rem,none);
+                }
+            }
+        }
     }
 }
