@@ -3,6 +3,9 @@
         font-size: 60%;
         gap: 6px;
     }
+    .LogoPrincipal{
+        @include x-y-c(25rem,10rem,none);
+    }
     .Sector2 
         article{
             div{

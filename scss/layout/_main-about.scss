@@ -6,7 +6,7 @@
     div{
         h1{
             color: $col-tex;
-            font-family: 'Jacques Francois Shadow', cursive; 
+            font-family: 'Young Serif', serif;
             text-decoration: underline;
         }
     }
@@ -18,13 +18,13 @@
         p{
             font-size: map-get($font-size ,md );
             color: $col-tex;
-            font-family: 'Jacques Francois Shadow', cursive;
+            font-family: 'Young Serif', serif;
         }
     }
 }
 .titleB{
     color: $col-tex;
-    font-family: 'Jacques Francois Shadow', cursive; 
+    font-family: 'Young Serif', serif;
     text-decoration: underline;
     text-align: center;
     margin-bottom: 2.5rem;

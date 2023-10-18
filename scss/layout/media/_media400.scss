@@ -1,6 +1,12 @@
 @media (max-width:400px){
     .LogoPrincipal{
-        width: 18.75rem;
-        height: 15.625rem ;
+        @include x-y-c(18rem,8.5rem,none);
+    }
+    footer{
+        div{
+            a{
+                margin: .5rem;
+            }
+        }
     }
 }

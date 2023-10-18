@@ -2,4 +2,7 @@
     .dreamEvil{
         display: none;
     }
+    .LogoPrincipal{
+        @include x-y-c(40rem,15rem,none);
+    }
 }

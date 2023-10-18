@@ -2,8 +2,14 @@
 footer{
     @include flex(row,nowrap,center,center,none);
     background-color:$bg-principal;
-    img{
-        height:4.6875rem ;
-        width:4.6875rem ;
+    div{
+        a{
+            margin:.9375rem;
+            img{
+            height:4.6875rem ;
+            width:4.6875rem ;
     }
+        }
+    }
+
 }

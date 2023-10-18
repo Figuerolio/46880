@@ -13,7 +13,7 @@ body{
 }
 
 .LogoPrincipal{
-    @include x-y-c(50rem,37.5rem,none);
+    @include x-y-c(50rem,20.5rem,none);
     img{
         @include x-y-c(100%,100%,none);
     }
@@ -28,7 +28,7 @@ body{
     article{
         @include flex(row,nowrap,center,center,none);
         @include x-y-c(none,60%,40%);
-        background-color:$col-terci ;
+        background-color: rgba(38, 1, 1, 0.533) ;
         margin: 0rem 5% 0rem 5%;
         div{
             @include flex(row,nowrap,center,center,none);
@@ -42,7 +42,7 @@ body{
                 @include x-y-c(80%,none,10%);
                 margin: .4688rem;
                 text-align: center;
-                font-family: 'Jacques Francois Shadow', cursive;
+                font-family: 'Young Serif', serif;
                 color:$col-tex;
             }
         }

@@ -3,6 +3,9 @@
         height:6.875rem ;
         width:6.875rem ;
     }
+    .LogoPrincipal{
+        @include x-y-c(25rem,10rem,none);
+    }
     .MerchAndise img{
         height: 8.5rem ;
         width: 8.5rem;

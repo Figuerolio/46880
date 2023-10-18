@@ -7,7 +7,7 @@
         color: $col-tex;
         text-align: center;
         text-decoration: none;
-        font-family: 'Jacques Francois Shadow', cursive; 
+        font-family: 'Young Serif', serif;
     }
 }
 
@@ -21,7 +21,7 @@
 
 .col{
     color:$col-tex;
-    font-family: 'Jacques Francois Shadow', cursive; 
+    font-family: 'Young Serif', serif;
     a{
         img{
             @include x-y-c(100%,100%,10%);
