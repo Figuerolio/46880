@@ -14,5 +14,15 @@
         height: 25rem;
         width: 18.75rem;
     }
-
+    .NewsTop{
+        div{
+            div{
+                a{
+                    img{
+                        @include x-y-c (18.75rem,12.5rem,10%);
+                    }
+                }
+            }
+        }
+    }
 }

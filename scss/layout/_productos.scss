@@ -1,0 +1,59 @@
+.SectProd{
+    @include flex(row,nowrap,space-around,flex start,none);
+    padding: 4.5rem;
+    div{
+        h1{
+            color: $col-tex;
+            font-family: 'Young Serif', serif;
+        }
+        li{
+            @include flex(row,nowrap,space-around,center,none);
+            margin-top: 7.5rem;
+            a{
+                text-decoration: none;
+            }
+        }
+        p{
+            color: $col-tex;
+            font-family: 'Young Serif', serif;
+        }
+        button{
+            margin-top: 2rem;
+            @include x-y-c(12.5rem,6.25rem,20%);
+            background-color:$col-tex;
+            font-size: map-get($font-size,xl );
+            color: black;
+            font-family: 'Young Serif', serif;
+        }
+        img{
+            @include x-y-c(31.25rem,31.25rem,10%);  
+        }
+    }
+}
+.divButt{ 
+    @include flex(row,none,center,none,none);
+}
+.textoProd{
+    padding-left: 3.125rem;
+}
+.SectProd2{
+    @include flex(column,nowrap,center,center,none);
+    div{
+        @include flex(row,wrap,center,center,100px);
+        img{
+            @include x-y-c(12.5rem,12.5rem,10%)
+        }
+        p{
+            color: $col-tex;
+            font-family: 'Young Serif', serif;
+        }
+    }
+}
+.SectProd3{
+    @extend .SectProd;
+    div{
+        img{
+            @include x-y-c(28.125rem,37.5rem,10%);
+        }
+    }
+}

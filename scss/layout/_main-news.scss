@@ -12,20 +12,44 @@
 }
 
 .NewsTop{
-    margin-top: 4.375rem;
-}
-.row{
-    margin-top: 2.5rem;
-    align-items: center;
-}
-
-.col{
-    color:$col-tex;
-    font-family: 'Young Serif', serif;
-    a{
-        img{
-            @include x-y-c(100%,100%,10%);
+    margin: 5rem;
+    div{
+        font-family: 'Young Serif', serif;
+        color: $col-tex;
+        @include flex (row,nowrap,center,center,none);
+        margin-top: 2.5rem;
+        div{
+            a{
+                img{
+                    @include x-y-c (25rem,16.875rem,10%);
+                }
+            }
         }
     }
-
 }
+.new1{
+    margin-right:2rem; 
+}
+.new2{
+    margin-left: 2rem;
+}
+.new3{
+    @extend .new1
+}
+
+.DownNews{
+    div{
+        @include flex(row,wrap,center,center,2rem);
+        div{
+            margin: 1rem;
+            a{
+                img{
+                    @include x-y-c(15.625rem,9.375rem,10%);
+                }
+            }
+        }
+    }
+}
+
+
+

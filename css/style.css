@@ -189,19 +189,41 @@ body {
     font-family: 'Young Serif', serif; }
 
 .NewsTop {
-  margin-top: 4.375rem; }
+  margin: 5rem; }
+  .NewsTop div {
+    font-family: 'Young Serif', serif;
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 2.5rem; }
+    .NewsTop div div a img {
+      width: 25rem;
+      height: 16.875rem;
+      border-radius: 10%; }
 
-.row {
-  margin-top: 2.5rem;
-  align-items: center; }
+.new1, .new3 {
+  margin-right: 2rem; }
 
-.col {
-  color: #fcfcfc;
-  font-family: 'Young Serif', serif; }
-  .col a img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%; }
+.new2 {
+  margin-left: 2rem; }
+
+.DownNews div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .DownNews div div {
+    margin: 1rem; }
+    .DownNews div div a img {
+      width: 15.625rem;
+      height: 9.375rem;
+      border-radius: 10%; }
 
 /******************************SHOP***************************************/
 .TopShop {
@@ -279,6 +301,83 @@ body {
     width: 23.125rem;
     height: 32.1875rem;
     border-radius: 10%; }
+
+/******************************PRODUCTOS*****************************/
+.SectProd, .SectProd3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex start;
+  gap: none;
+  padding: 4.5rem; }
+  .SectProd div h1, .SectProd3 div h1 {
+    color: #fcfcfc;
+    font-family: 'Young Serif', serif; }
+  .SectProd div li, .SectProd3 div li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: none;
+    margin-top: 7.5rem; }
+    .SectProd div li a, .SectProd3 div li a {
+      text-decoration: none; }
+  .SectProd div p, .SectProd3 div p {
+    color: #fcfcfc;
+    font-family: 'Young Serif', serif; }
+  .SectProd div button, .SectProd3 div button {
+    margin-top: 2rem;
+    width: 12.5rem;
+    height: 6.25rem;
+    border-radius: 20%;
+    background-color: #fcfcfc;
+    font-size: 30px;
+    color: black;
+    font-family: 'Young Serif', serif; }
+  .SectProd div img, .SectProd3 div img {
+    width: 31.25rem;
+    height: 31.25rem;
+    border-radius: 10%; }
+
+.divButt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none; }
+
+.textoProd {
+  padding-left: 3.125rem; }
+
+.SectProd2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none; }
+  .SectProd2 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; }
+    .SectProd2 div img {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 10%; }
+    .SectProd2 div p {
+      color: #fcfcfc;
+      font-family: 'Young Serif', serif; }
+
+.SectProd3 div img {
+  width: 28.125rem;
+  height: 37.5rem;
+  border-radius: 10%; }
 
 /******************************TOURS**********************************/
 .TouerS {
@@ -392,7 +491,20 @@ footer {
   .LogoPrincipal {
     width: 40rem;
     height: 15rem;
-    border-radius: none; } }
+    border-radius: none; }
+  .NewsTop div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: none; }
+  .new1, .new3 {
+    margin: 0rem; }
+  .new2 {
+    margin: 0rem; }
+  .new3 {
+    margin: 0rem; } }
 
 @media (max-width: 675px) {
   .lastLine {
@@ -454,7 +566,11 @@ footer {
     width: 8.5rem; }
   .Poster1 img {
     height: 25rem;
-    width: 18.75rem; } }
+    width: 18.75rem; }
+  .NewsTop div div a img {
+    width: 18.75rem;
+    height: 12.5rem;
+    border-radius: 10%; } }
 
 @media (max-width: 425px) {
   .navbar {

@@ -5,4 +5,23 @@
     .LogoPrincipal{
         @include x-y-c(40rem,15rem,none);
     }
+    .NewsTop{
+        div{
+            @include flex(column,nowrap,center,center,none);
+        }
+    }
+    .new1{
+        margin: 0rem;
+    }
+    .new2{
+        margin: 0rem;
+        
+    }
+    .new3{
+        margin: 0rem;
+    }
+
+
+
+
 }
